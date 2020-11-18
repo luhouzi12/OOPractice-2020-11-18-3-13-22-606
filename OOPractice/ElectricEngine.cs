@@ -4,10 +4,11 @@ using System.Text;
 
 namespace OOPractice
 {
-    public class Car : Vehicle
+    public class ElectricEngine : IEngine
     {
-        public Car(string name, IEngine engine) : base(name, engine.GetSpeed())
+        public int GetSpeed()
         {
+            return 30;
         }
     }
 }
