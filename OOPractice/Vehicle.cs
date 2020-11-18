@@ -6,12 +6,17 @@ namespace OOPractice
 {
     public class Vehicle
     {
-        private string name;
-        private int speed;
+        protected string name;
+        protected int speed;
         public Vehicle(string name, int speed)
         {
             this.name = name;
             this.speed = speed;
+        }
+
+        public string Speedup()
+        {
+            return this.name + ": speed up " + this.speed.ToString() + " km/h";
         }
     }
 }
